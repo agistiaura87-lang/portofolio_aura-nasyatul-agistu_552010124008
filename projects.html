@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Aura Nasyatul Agisti</title>
+  <!-- Google Fonts & Bootstrap 4 -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- CSS Eksternal -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand font-weight-bold">Aura<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <!-- Tombol Dark/Light Mode -->
+          <li class="nav-item ml-lg-3 mt-2 mt-lg-0">
+            <button id="theme-toggle" class="btn btn-sm btn-theme" aria-label="Ganti Tema">
+              <i class="fas fa-moon"></i> Mode Gelap
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="content-section">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="eyebrow">GALERI KARYA</p>
+          <h2 class="section-title">Daftar Proyek & Tugas Akademik</h2>
+          <p class="section-intro">Berikut adalah kumpulan proyek web, desain antarmuka, dan dokumentasi kegiatan yang pernah saya kerjakan.</p>
+          
+          <!-- Tombol Filter Kategori (Terhubung dengan script.js) -->
+          <div class="filter-buttons mt-3" id="filter-container">
+            <button class="btn btn-filter active" data-category="all">Semua</button>
+            <button class="btn btn-filter" data-category="web">Web Development</button>
+            <button class="btn btn-filter" data-category="design">Desain & UI</button>
+            <button class="btn btn-filter" data-category="organisasi">Organisasi</button>
+          </div>
+        </div>
+
+        <!-- Container untuk Render Proyek Dinamis via JavaScript -->
+        <div class="row mt-4" id="project-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <h3>Aura Nasyatul Agisti</h3>
+      <p class="small mb-1">&copy; 2026 Aura Nasyatul Agisti. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol Back to Top -->
+  <button id="backToTop" class="back-to-top" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
